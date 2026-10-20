@@ -29,8 +29,7 @@ CREATE TABLE ProductDescription (
 CREATE TABLE Logs (
     ID INT,
     Timestamp DATE,
-    Message VARCHAR(100),
-    PRIMARY KEY (ID)
+    Message VARCHAR(100)
 ) ENGINE=Blackhole;
 
 -- Create a table for storing reporting data, which will be send to a separate application in the CSV format for analytics purposes (Columns:  Date, ProductName, Orders)
